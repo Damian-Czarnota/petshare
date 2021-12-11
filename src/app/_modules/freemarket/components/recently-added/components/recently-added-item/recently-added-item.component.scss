@@ -1,0 +1,51 @@
+.recently-added-item {
+  &__photo-container {
+    width: 175px;
+    height: 175px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__photo {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__location {
+    font-size: 10px;
+    line-height: 15px;
+    color: #718096;
+  }
+
+  &__new {
+    padding: 2px 6px;
+    background: rgba(27, 208, 220, 0.9);
+    border-radius: 10px;
+    color: white;
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 14px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+
+  &__favourite {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+  }
+
+  &__name {
+    color: var(--title-color);
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  &__price {
+      color: #061D57;
+      font-size: 15px;
+      font-weight: 600;
+  }
+}

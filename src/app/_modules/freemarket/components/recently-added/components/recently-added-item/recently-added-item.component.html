@@ -1,0 +1,26 @@
+<div class="mb-4">
+    <div class="recently-added-item__photo-container">
+        <img class="recently-added-item__photo" [src]="'/assets/images/'+item.photo" alt="Item photo">
+        <div *ngIf="item.isNew" class="recently-added-item__new">NEW</div>
+        <img class="recently-added-item__favourite" src="assets/icons/heart_outline.svg">
+    </div>
+    <div class="recently-added-item__location mt-1">
+        <img src="assets/icons/location.svg">
+        {{item.location}} {{item.distance}}km
+    </div>
+    <div class="d-flex flex-column mt-1">
+        <div class="d-flex justify-content-between">
+            <span class="recently-added-item__name">{{item.name}}</span>
+            <span class="recently-added-item__price">{{item.price}}$</span>
+        </div>
+        <div class="d-flex align-items-center mt-1">
+            <img src="/assets/images/profile_woman.png" alt="Profile photo">
+            <span class="mx-1">{{item.user}}</span>
+            <img src="assets/icons/star_fill.svg">
+            <img src="assets/icons/star_fill.svg">
+            <img src="assets/icons/star_fill.svg">
+            <img src="assets/icons/star_fill.svg">
+            <img src="assets/icons/star.svg">
+        </div>
+    </div>
+</div>

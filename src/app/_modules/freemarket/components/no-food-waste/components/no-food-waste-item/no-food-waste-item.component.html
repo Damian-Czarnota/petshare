@@ -1,0 +1,23 @@
+<div class="no-food-waste-item">
+    <div class="no-food-waste-item__photo-container">
+        <img class="no-food-waste-item__photo" [src]="'/assets/images/'+item.photo" alt="Dog food">
+        <div class="no-food-waste-item__time-left">
+            <img class="mr-1" src="assets/icons/time-left.svg" alt="Time left icon">
+            {{item.timeLeft}}
+        </div>
+    </div>
+    <div class="no-food-waste-item__description">
+        <div class="d-flex align-items-center">
+            <img src="assets/icons/location.svg" alt="Location">
+            <span class="mx-1">{{item.location}}</span>
+            {{item.distance}}km
+        </div>
+        <div class="no-food-waste-item__name">
+            {{item.name}}
+        </div>
+        <div class="no-food-waste-item__user">
+            <img class="mr-1" src="/assets/images/profile_woman_confirmed.png" alt="Profile photo">
+            <span>{{item.user}}</span>
+        </div>
+    </div>
+</div>

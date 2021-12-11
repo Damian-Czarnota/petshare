@@ -1,0 +1,58 @@
+.no-food-waste-item {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 190px;
+  border: 1px solid #e24959;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__photo-container {
+    width: 100%;
+    min-height: 85px;
+    height: 85px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__time-left {
+    position: absolute;
+    background: #D6253F;
+    padding: 2px;
+    line-height: 14px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #FFFFFF;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__description {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  &__name {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #061d57;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+  }
+}

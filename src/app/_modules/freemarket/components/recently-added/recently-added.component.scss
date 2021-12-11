@@ -1,0 +1,14 @@
+.recently-added{
+    &__title {
+        font-size: 18px;
+        color: #061D57;
+        font-weight: 500;
+    }
+
+    &__more {
+        font-size: 12px;
+        color: #1AB9DC;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
