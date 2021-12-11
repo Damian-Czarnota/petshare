@@ -11,6 +11,7 @@ import { RecentlyAddedComponent } from './components/recently-added/recently-add
 import { FreemarketComponent } from './container/freemarket.component';
 import { FreemarketRoutingModule } from './freemarket-routing.module';
 import { ListingSingleComponent } from './pages/listing-single/listing-single.component';
+import { ListingCheckoutComponent } from './pages/listing-checkout/listing-checkout.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ListingSingleComponent } from './pages/listing-single/listing-single.co
     RecentlyAddedComponent,
     RecentlyAddedItemComponent,
     NoFoodWasteItemComponent,
-    NoFoodWasteComponent
+    NoFoodWasteComponent,
+    ListingCheckoutComponent
   ],
   imports: [
     CommonModule,

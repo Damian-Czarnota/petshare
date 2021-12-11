@@ -35,6 +35,10 @@ body {
     font-size: 14px;
   }
 
+  &--size-16 {
+    font-size: 16px;
+  }
+
   &--size-24 {
     font-size: 24px;
   }
@@ -59,7 +63,7 @@ body {
 a {
   text-decoration: none;
   color: var(--description-color);
-  transition: .5s;
+  transition: 0.5s;
 
   &:hover {
     color: var(--primary);
@@ -108,4 +112,13 @@ a {
 
 a {
   font-family: "PetshareFont", Arial, sans-serif;
+}
+
+.card {
+  border: 1px solid #edf2f7;
+  box-sizing: border-box;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  min-height: 58px;
 }
