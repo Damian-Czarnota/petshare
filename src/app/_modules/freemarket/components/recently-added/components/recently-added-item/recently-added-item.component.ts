@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { RecentlyAddedItem } from '@app/_core/models/recently-added';
+import { ListingItem } from '@app/_core/models/listing-item';
 
 @Component({
   selector: 'app-recently-added-item',
@@ -7,7 +7,7 @@ import { RecentlyAddedItem } from '@app/_core/models/recently-added';
   styleUrls: ['./recently-added-item.component.scss']
 })
 export class RecentlyAddedItemComponent implements OnInit {
-  @Input() item: RecentlyAddedItem;
+  @Input() item: ListingItem;
 
   constructor() { }
 

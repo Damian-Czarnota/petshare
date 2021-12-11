@@ -1,8 +1,8 @@
-<div class="mb-4">
+<div class="recently-added-item mb-4" [routerLink]="'single/'+item.slug">
     <div class="recently-added-item__photo-container">
         <img class="recently-added-item__photo" [src]="'/assets/images/'+item.photo" alt="Item photo">
         <div *ngIf="item.isNew" class="recently-added-item__new">NEW</div>
-        <img class="recently-added-item__favourite" src="assets/icons/heart_outline.svg">
+        <img class="recently-added-item__favourite" src="assets/icons/heart_outline.svg" (click)="$event.stopPropagation()">
     </div>
     <div class="recently-added-item__location mt-1">
         <img src="assets/icons/location.svg">

@@ -2,7 +2,7 @@
     <div class="back-arrow">
         <img src="../../../../../assets/icons/short_left.svg" routerLink="/">
     </div>
-    <img src="../../../../../assets/mockups/dogfood.png">
+    <img [src]="'../../../../../assets/images/'+item.photo">
     <div class="rounded-bottom-border"></div>
 </div>
 
@@ -29,11 +29,11 @@
         </div>
         <div class="col-12 d-flex align-items-center">
             <img src="../../../../../assets/icons/location.svg" class="mr-2">
-            <span class="text--size-10 text--typography-gray">Warsaw, 2km</span>
+            <span class="text--size-10 text--typography-gray">{{item.location}}, {{item.distance}}km</span>
         </div>
         <div class="col-12 d-flex text--title">
-            <span>Dog food 25kg</span>
-            <span class="ml-auto">15$</span>
+            <span>{{item.name}}</span>
+            <span class="ml-auto">{{item.price}}$</span>
         </div>
         <div class="col-12 text--size-10 text--typography-gray">
             PETS / FOOD / DOG FOOD
@@ -46,8 +46,9 @@
         <div class="divider mt-2 mb-2"></div>
         <div class="col-12">
             <p class="m-0 text--size-12 text--weight-500 text--typography-title">Description</p>
-            <p class="m-0 text--size-14 text--typography-gray text--weight-500">I would give away 25kg of dog food, expire on
-                12.12.2021, I can send you ingredients on DM</p>
+            <p class="m-0 text--size-14 text--typography-gray text--weight-500">
+                {{item.description}}
+            </p>
             <a class="text--primary text--size-12 text--weight-500 mt-1">Show more</a>
         </div>
         <div class="divider mt-2 mb-2"></div>

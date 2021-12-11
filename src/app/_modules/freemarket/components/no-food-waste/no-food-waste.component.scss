@@ -3,9 +3,17 @@
     display: flex;
     gap: 10px;
     overflow-x: scroll;
-  }
-
-  &__container::-webkit-scrollbar {
-    display: none;
+    scrollbar-width: thin;
+  
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 7px;
+      height: 10px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: #dbdbdb;
+    }
   }
 }

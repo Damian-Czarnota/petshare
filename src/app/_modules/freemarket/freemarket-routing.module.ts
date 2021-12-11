@@ -6,31 +6,31 @@ import { ListingSingleComponent } from './pages/listing-single/listing-single.co
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: FreemarketComponent,
-    canActivate: [],
-    children: []
-  },
-  {
-    path: 'single',
-    component: ListingSingleComponent,
-    canActivate: [],
-    children: []
-  },
-  {
-    path: 'checkout',
-    component: ListingCheckoutComponent,
-    canActivate: [],
-    children: []
-  },
+    {
+        path: '',
+        component: FreemarketComponent,
+        canActivate: [],
+        children: []
+    },
+    {
+        path: 'single/:slug',
+        component: ListingSingleComponent,
+        canActivate: [],
+        children: []
+    },
+    {
+        path: 'checkout',
+        component: ListingCheckoutComponent,
+        canActivate: [],
+        children: []
+    },
 ];
 
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
-  providers: []
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule],
+    providers: []
 })
 export class FreemarketRoutingModule {
 }

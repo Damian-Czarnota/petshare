@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NoFoodWasteItem } from '@app/_core/models/no-food-waste';
+import { ListingItem } from '@app/_core/models/listing-item';
 
 @Component({
   selector: 'app-no-food-waste-item',
@@ -7,11 +7,10 @@ import { NoFoodWasteItem } from '@app/_core/models/no-food-waste';
   styleUrls: ['./no-food-waste-item.component.scss']
 })
 export class NoFoodWasteItemComponent implements OnInit {
-  @Input() item: NoFoodWasteItem;
+  @Input() item: ListingItem;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
