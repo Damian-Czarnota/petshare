@@ -1,7 +1,10 @@
 <div class="container">
     <div class="row secondary-navigation">
-        <a *ngFor="let step of steps"
-           [routerLink]="'/' + step.url"
-           class="col-auto secondary-navigation__item">{{'SECONDARY-NAVIGATION.' + step.name | translate}}</a>
+        <a *ngFor="let step of steps; let i = index"
+           [routerLink]="step.url"
+           class="secondary-navigation__item"
+           [class.secondary-navigation__item--active]="activeStepIndex === i">
+            {{'SECONDARY-NAVIGATION.' + step.name | translate}}
+        </a>
     </div>
 </div>
