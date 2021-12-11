@@ -11,7 +11,6 @@ body {
   line-height: 24px;
 }
 
-
 .text {
   &--title {
     font-weight: 600;
@@ -26,5 +25,25 @@ body {
 
   &--typography-white {
     color: var(--white-text);
+  }
+}
+
+.tag {
+  height: 15px;
+  padding: 0px 6px;
+  font-family: PetshareFont;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 15px;
+  color: #ffffff;
+  border-radius: 10px;
+
+  &--blue {
+    background: rgba(27, 208, 220, 0.9);
+  }
+
+  &--red {
+    background: #CF1F3C;
   }
 }
