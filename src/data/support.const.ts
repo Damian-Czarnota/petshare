@@ -2,6 +2,7 @@ import { Support } from '@app/_core/models/support';
 
 export const SUPPORT_DATA: Support[] = [
   {
+    slug: 'food-and-blankets-for-warsaw-animal-shelter',
     title: 'Food and blankets needed!',
     description: 'Our shelter is running out of basic supplies such as blankets for winter and universal food for cats&dogs',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
@@ -12,10 +13,14 @@ export const SUPPORT_DATA: Support[] = [
       contact: {
         phone: '123 345 678',
         email: 'contact@warshelter.pl'
+      },
+      address: {
+        city: 'Warsaw'
       }
     }
   },
   {
+    slug: 'toys-for-pety-animal-center',
     title: 'Toys for new animal center needed!',
     description: 'We are opening new animal center, If you have some sort of animal accessories bring them to us!',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
@@ -26,10 +31,14 @@ export const SUPPORT_DATA: Support[] = [
       contact: {
         phone: '123 345 678',
         email: 'contact@animalcenter.pl'
+      },
+      address: {
+        city: 'Cracow'
       }
     }
   },
   {
+    slug: 'wheelchair-for-kevin',
     title: 'New wheelchair for Kevin',
     description: 'Hello, our dog Kevin had a terrible accident and we are looking for a used, dog wheelchair. Feel free to contact',
     request: ['dog wheelchair'],
@@ -40,10 +49,14 @@ export const SUPPORT_DATA: Support[] = [
       contact: {
         phone: '123 345 678',
         email: 'Thomas@hampton.pl'
+      },
+      address: {
+        city: 'Radom'
       }
     }
   },
   {
+    slug: 'food-and-blankets-for-warsaw-animal-shelter',
     title: 'Food and blankets needed!',
     description: 'Our shelter is running out of basic supplies such as blankets for winter and universal food for cats&dogs',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
@@ -54,10 +67,14 @@ export const SUPPORT_DATA: Support[] = [
       contact: {
         phone: '123 345 678',
         email: 'contact@warshelter.pl'
+      },
+      address: {
+        city: 'Warsaw'
       }
     }
   },
   {
+    slug: 'toys-for-pety-animal-center',
     title: 'Toys for new animal center needed!',
     description: 'We are opening new animal center, If you have some sort of animal accessories bring them to us!',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
@@ -68,10 +85,14 @@ export const SUPPORT_DATA: Support[] = [
       contact: {
         phone: '123 345 678',
         email: 'contact@animalcenter.pl'
+      },
+      address: {
+        city: 'Cracow'
       }
     }
   },
   {
+    slug: 'wheelchair-for-kevin',
     title: 'New wheelchair for Kevin',
     description: 'Hello, our dog Kevin had a terrible accident and we are looking for a used, dog wheelchair. Feel free to contact',
     request: ['dog wheelchair'],
@@ -82,6 +103,9 @@ export const SUPPORT_DATA: Support[] = [
       contact: {
         phone: '123 345 678',
         email: 'Thomas@hampton.pl'
+      },
+      address: {
+        city: 'Radom'
       }
     }
   }

@@ -1,4 +1,5 @@
 export interface Support {
+  slug: string;
   title: string;
   description: string;
   request: string[] | null;
@@ -12,5 +13,8 @@ export interface SupportAuthor {
   contact: {
     phone: string;
     email: string;
+  },
+  address: {
+    city: string;
   }
 }

@@ -1,0 +1,68 @@
+.support-wrapper {
+  &:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+}
+
+.support {
+  padding: 16px 12px;
+  background-color: #FBFCFD;
+  border-radius: 5px;
+
+  &__title {
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    color: var(--title-color);
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 16px;
+    color: #718096;
+    margin: 0 0 12px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    .author {
+      display: flex;
+      align-items: center;
+
+      &__photo {
+        position: relative;
+        height: 23px;
+        width: 23px;
+
+        img:nth-of-type(1) {
+          height: 23px;
+          width: 23px;
+        }
+
+        .verified {
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          width: 12px;
+          height: 12px;
+        }
+      }
+
+      &__name, &__city {
+        font-size: 11px;
+        line-height: 12px;
+      }
+
+      &__name {
+        margin-left: 6px;
+      }
+
+      &__city {
+        color: #465264;
+      }
+    }
+  }
+}

@@ -5,10 +5,22 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12" *ngFor="let item of data">
+        <div class="col-12 support-wrapper" *ngFor="let item of data">
             <div class="support">
                 <h4 class="support__title">{{item.title}}</h4>
                 <p class="support__description">{{item.description}}</p>
+                <div class="support__footer">
+                    <div class="author">
+                        <div class="author__photo">
+                            <img [src]="item.author.name === 'Thomas Hampton' ? '/assets/icons/thomas.svg' : '/assets/icons/kate.svg'"
+                                 [alt]="item.author.name + ' profile picture'">
+                            <img *ngIf="item.author.verified" class="verified" src="/assets/icons/verified.svg" alt="Profile verified icon">
+                        </div>
+                        <span class="author__name">{{item.author.name}}</span>
+                        <span class="author__city">&nbsp;|&nbsp;{{item.author.address.city}}</span>
+                    </div>
+                    <a [routerLink]="item.slug"><img src="/assets/icons/long_right.svg" alt="Long arrow icon"></a>
+                </div>
             </div>
         </div>
     </div>
