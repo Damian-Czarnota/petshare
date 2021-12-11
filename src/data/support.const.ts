@@ -4,7 +4,8 @@ export const SUPPORT_DATA: Support[] = [
   {
     slug: 'food-and-blankets-for-warsaw-animal-shelter',
     title: 'Food and blankets needed!',
-    description: 'Our shelter is running out of basic supplies such as blankets for winter and universal food for cats&dogs',
+    shortDescription: 'Our shelter is running out of basic supplies such as blankets for winter and universal food for cats&dogs',
+    description: 'The biggest animal shelter in Warsaw need your help! Winter is coming, so our dogs, cats and other smaller friends need more food and warm blankets. If you have old blankets you can send them to us or bring by your own! Please share with friends',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
     author: {
       verified: true,
@@ -22,8 +23,9 @@ export const SUPPORT_DATA: Support[] = [
   {
     slug: 'toys-for-pety-animal-center',
     title: 'Toys for new animal center needed!',
-    description: 'We are opening new animal center, If you have some sort of animal accessories bring them to us!',
+    shortDescription: 'We are opening new animal center, If you have some sort of animal accessories bring them to us!',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
+    description: 'The biggest animal shelter in Warsaw need your help! Winter is coming, so our dogs, cats and other smaller friends need more food and warm blankets. If you have old blankets you can send them to us or bring by your own! Please share with friends',
     author: {
       verified: true,
       company: true,
@@ -40,7 +42,8 @@ export const SUPPORT_DATA: Support[] = [
   {
     slug: 'wheelchair-for-kevin',
     title: 'New wheelchair for Kevin',
-    description: 'Hello, our dog Kevin had a terrible accident and we are looking for a used, dog wheelchair. Feel free to contact',
+    shortDescription: 'Hello, our dog Kevin had a terrible accident and we are looking for a used, dog wheelchair. Feel free to contact',
+    description: 'The biggest animal shelter in Warsaw need your help! Winter is coming, so our dogs, cats and other smaller friends need more food and warm blankets. If you have old blankets you can send them to us or bring by your own! Please share with friends',
     request: ['dog wheelchair'],
     author: {
       verified: false,
@@ -58,7 +61,8 @@ export const SUPPORT_DATA: Support[] = [
   {
     slug: 'food-and-blankets-for-warsaw-animal-shelter',
     title: 'Food and blankets needed!',
-    description: 'Our shelter is running out of basic supplies such as blankets for winter and universal food for cats&dogs',
+    shortDescription: 'Our shelter is running out of basic supplies such as blankets for winter and universal food for cats&dogs',
+    description: 'The biggest animal shelter in Warsaw need your help! Winter is coming, so our dogs, cats and other smaller friends need more food and warm blankets. If you have old blankets you can send them to us or bring by your own! Please share with friends',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
     author: {
       verified: true,
@@ -76,7 +80,8 @@ export const SUPPORT_DATA: Support[] = [
   {
     slug: 'toys-for-pety-animal-center',
     title: 'Toys for new animal center needed!',
-    description: 'We are opening new animal center, If you have some sort of animal accessories bring them to us!',
+    shortDescription: 'We are opening new animal center, If you have some sort of animal accessories bring them to us!',
+    description: 'The biggest animal shelter in Warsaw need your help! Winter is coming, so our dogs, cats and other smaller friends need more food and warm blankets. If you have old blankets you can send them to us or bring by your own! Please share with friends',
     request: ['warm blankets', 'universal dog food', 'universal cat food'],
     author: {
       verified: true,
@@ -94,7 +99,8 @@ export const SUPPORT_DATA: Support[] = [
   {
     slug: 'wheelchair-for-kevin',
     title: 'New wheelchair for Kevin',
-    description: 'Hello, our dog Kevin had a terrible accident and we are looking for a used, dog wheelchair. Feel free to contact',
+    shortDescription: 'Hello, our dog Kevin had a terrible accident and we are looking for a used, dog wheelchair. Feel free to contact',
+    description: 'The biggest animal shelter in Warsaw need your help! Winter is coming, so our dogs, cats and other smaller friends need more food and warm blankets. If you have old blankets you can send them to us or bring by your own! Please share with friends',
     request: ['dog wheelchair'],
     author: {
       verified: false,

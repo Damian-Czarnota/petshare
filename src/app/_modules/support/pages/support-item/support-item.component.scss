@@ -1,0 +1,25 @@
+.header {
+  position: relative;
+  padding-bottom: 10px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: #C7CFD8;
+    border-radius: 10px;
+    width: 15%;
+    margin: 10px auto;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.location {
+  font-size: 11px;
+  line-height: 12px;
+}

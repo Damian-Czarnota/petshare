@@ -1,6 +1,7 @@
 export interface Support {
   slug: string;
   title: string;
+  shortDescription: string;
   description: string;
   request: string[] | null;
   author: SupportAuthor;

@@ -47,3 +47,11 @@ body {
     background: #CF1F3C;
   }
 }
+
+.btn-invisible {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
