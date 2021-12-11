@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './container/layout.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -16,7 +17,8 @@ import { MenuComponent } from './components/menu/menu.component';
     LayoutComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ]
 })
 export class LayoutModule { }

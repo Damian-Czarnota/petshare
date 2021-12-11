@@ -80,3 +80,32 @@
     color: #fff;
   }
 }
+
+.author {
+  display: flex;
+  align-items: center;
+
+  &__photo {
+    position: relative;
+    height: 53px;
+    width: 53px;
+
+    img:nth-of-type(1) {
+      height: 53px;
+      width: 53px;
+    }
+
+    .verified {
+      position: absolute;
+      top: -4px;
+      right: -4px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    margin-left: 14px;
+  }
+}

@@ -1,6 +1,7 @@
 <div class="menu">
-    <div *ngFor="let step of steps; let i = index"
+    <a *ngFor="let step of steps; let i = index"
+        [routerLink]="step.url"
          class="menu__icon"
          [ngClass]="step.className"
-         [class.menu__icon--active]="i === activeStepIndex"></div>
+         [class.menu__icon--active]="i === activeStepIndex">&nbsp;</a>
 </div>

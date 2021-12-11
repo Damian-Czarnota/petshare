@@ -49,4 +49,17 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <span class="section-title">{{data.author.company ? 'About organisation' : 'About user'}}</span>
+            <div class="author">
+                <div class="author__photo">
+                    <img [src]="data.author.name === 'Thomas Hampton' ? '/assets/icons/thomas.svg' : '/assets/icons/kate.svg'"
+                         [alt]="data.author.name + ' profile picture'">
+                    <img *ngIf="data.author.verified" class="verified" src="/assets/icons/verified.svg" alt="Profile verified icon">
+                </div>
+                <span class="author__name">{{data.author.name}}</span>
+            </div>
+        </div>
+    </div>
 </div>

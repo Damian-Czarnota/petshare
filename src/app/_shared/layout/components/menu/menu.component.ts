@@ -13,8 +13,8 @@ export class MenuComponent implements OnInit {
   activeStepIndex: number;
 
   steps = [
-    { className: 'cart', pathRegexp: new RegExp('^/$')},
-    { className: 'home', pathRegexp: new RegExp('^/support$')},
+    { className: 'cart', pathRegexp: new RegExp('^/$'), url: '/'},
+    { className: 'home', pathRegexp: new RegExp('^/support|(/\*)$'), url: '/support'},
     { className: 'add', pathRegexp: null},
     { className: 'magnifier', pathRegexp: null},
     { className: 'user', pathRegexp: null}];
