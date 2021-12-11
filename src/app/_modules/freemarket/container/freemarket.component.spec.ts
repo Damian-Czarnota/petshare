@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { MainComponent } from './main.component';
+import { FreemarketComponent } from './main.component';
 
 describe('MainComponent', () => {
-    let component: MainComponent;
-    let fixture: ComponentFixture<MainComponent>;
+    let component: FreemarketComponent;
+    let fixture: ComponentFixture<FreemarketComponent>;
 
     beforeEach(waitForAsync(() => {
         TestBed.configureTestingModule({
-            declarations: [MainComponent]
+            declarations: [FreemarketComponent]
         })
             .compileComponents();
     }));
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(MainComponent);
+        fixture = TestBed.createComponent(FreemarketComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

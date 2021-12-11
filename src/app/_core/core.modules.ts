@@ -51,7 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 })
 export class CoreModule {
     constructor(private translate: TranslateService) {
-        translate.setDefaultLang('pl');
-        translate.use('pl');
+        translate.setDefaultLang('en');
+        translate.use('en');
     }
 }

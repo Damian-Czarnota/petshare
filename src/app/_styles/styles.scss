@@ -1,3 +1,19 @@
 @import "normalize";
 @import "variables";
 @import "mixins";
+@import "fonts";
+@import "grid.min";
+
+body {
+  font-family: "PetshareFont", Arial, sans-serif;
+  font-size: 16px;
+  color: var(--description-color);
+  line-height: 24px;
+}
+
+
+.text {
+  &--title {
+    font-weight: 700;
+  }
+}

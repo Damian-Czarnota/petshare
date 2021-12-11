@@ -1,0 +1,8 @@
+.secondary-navigation {
+  &__item {
+    flex-grow: 1;
+    text-align: center;
+    color: var(--title-color);
+    text-decoration: none;
+  }
+}

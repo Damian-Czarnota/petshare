@@ -5,7 +5,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
     {
         path: '',
-        loadChildren: () => import('./_modules/main/main.module').then((M) => M.MainModule),
+        loadChildren: () => import('./_modules/freemarket/freemarket.module').then((M) => M.Freemarket),
+    },
+    {
+        path: 'support',
+        loadChildren: () => import('./_modules/support/support.module').then((M) => M.SupportModule),
     }
 ];
 

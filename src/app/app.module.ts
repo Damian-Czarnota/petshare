@@ -6,7 +6,7 @@ import { LayoutModule } from '@app/_shared/layout/layout.module';
 
 @NgModule({
     declarations: [
-        AppComponent,
+        AppComponent
     ],
     imports: [
         CoreModule,

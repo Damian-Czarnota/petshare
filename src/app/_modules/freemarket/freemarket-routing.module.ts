@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from './container/main.component';
+import { FreemarketComponent } from './container/freemarket.component';
 
 
 const routes: Routes = [
     {
         path: '',
-        component: MainComponent,
+        component: FreemarketComponent,
         canActivate: [],
         children: []
     },
@@ -18,5 +18,5 @@ const routes: Routes = [
     exports: [RouterModule],
     providers: []
 })
-export class MainRoutingModule {
+export class FreemarketRoutingModule {
 }
