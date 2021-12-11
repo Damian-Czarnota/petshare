@@ -14,7 +14,10 @@ body {
 
 .text {
   &--title {
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--title-color);
   }
 
   &--size-24 {

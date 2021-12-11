@@ -5,11 +5,13 @@ import { SupportRoutingModule } from './support-routing.module';
 import { SupportComponent } from './container/support.component';
 import { SecondaryNavigationModule } from '@app/_shared/secondary-navigation/secondary-navigation.module';
 import { InfoBoxModule } from '@app/_shared/info-box/info-box.module';
+import { SupportListingComponent } from './components/support-listing/support-listing.component';
 
 
 @NgModule({
   declarations: [
-    SupportComponent
+    SupportComponent,
+    SupportListingComponent
   ],
   imports: [
     CommonModule,

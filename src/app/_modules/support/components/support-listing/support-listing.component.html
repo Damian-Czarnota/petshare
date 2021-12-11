@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <span class="text--title">Recently added</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" *ngFor="let item of data">
+            <div class="support">
+                <h4 class="support__title">{{item.title}}</h4>
+                <p class="support__description">{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

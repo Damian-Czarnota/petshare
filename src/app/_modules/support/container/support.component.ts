@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FreemarketComponent } from '@app/_modules/freemarket/container/freemarket.component';
 import { InfoBoxType } from '@app/_shared/info-box/info-box.component';
+import { SUPPORT_DATA } from 'src/data/support.const';
 
 @Component({
   selector: 'app-support',
@@ -11,6 +12,7 @@ export class SupportComponent implements OnInit {
 
   SECONDARY_NAVIGATION_STEPS = FreemarketComponent.SECONDARY_NAVIGATION_STEPS;
   InfoboxType = InfoBoxType;
+  SUPPORT_DATA = SUPPORT_DATA;
 
   constructor() { }
 
