@@ -10,10 +10,11 @@ import { filter, takeUntil } from 'rxjs/operators';
 })
 export class MenuComponent implements OnInit {
 
-  activeStepIndex: number = 0;
+  activeStepIndex: number;
+
   steps = [
-    { className: 'cart', pathRegexp: new RegExp('')},
-    { className: 'home', pathRegexp: null},
+    { className: 'cart', pathRegexp: new RegExp('^/$')},
+    { className: 'home', pathRegexp: new RegExp('^/support$')},
     { className: 'add', pathRegexp: null},
     { className: 'magnifier', pathRegexp: null},
     { className: 'user', pathRegexp: null}];
@@ -30,6 +31,8 @@ export class MenuComponent implements OnInit {
         .subscribe((event: NavigationEnd) => {
           this.activeStepIndex = this.steps.findIndex(step =>
               event.urlAfterRedirects.match(step.pathRegexp));
+
+          console.log(this.activeStepIndex);
         });
   }
 
