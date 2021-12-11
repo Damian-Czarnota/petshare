@@ -56,10 +56,19 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+  color: var(--description-color);
+  transition: .5s;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
 .tag {
   height: 15px;
-  padding: 0px 6px;
-  font-family: PetshareFont;
+  padding: 0 6px;
   font-style: normal;
   font-weight: 600;
   font-size: 9px;

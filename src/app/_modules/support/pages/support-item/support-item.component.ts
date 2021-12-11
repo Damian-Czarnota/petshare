@@ -4,6 +4,7 @@ import { SUPPORT_DATA } from 'src/data/support.const';
 import { ActivatedRoute } from '@angular/router';
 import { first } from 'rxjs/operators';
 import { Title } from '@angular/platform-browser';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-support-item',
@@ -14,7 +15,7 @@ export class SupportItemComponent implements OnInit {
 
   data: Support;
 
-  constructor(private _activatedRoute: ActivatedRoute, private _title: Title) {
+  constructor(private _activatedRoute: ActivatedRoute, private _title: Title, private _location: Location) {
     _activatedRoute.params
       .pipe(first())
       .subscribe(params => {
@@ -28,4 +29,12 @@ export class SupportItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  copySlug(): void {
+    document.addEventListener('copy', (e: ClipboardEvent) => {
+      e.clipboardData.setData('text/plain', (`${window.location.host}${this._location.path()}`));
+      e.preventDefault();
+      document.removeEventListener('copy', null);
+    });
+    document.execCommand('copy');
+  }
 }
