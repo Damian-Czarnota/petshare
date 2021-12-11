@@ -1,48 +1,70 @@
 <div class="container">
     <div class="row">
         <div class="col-12 d-flex align-items-center">
-            <img class="product-image mr-3" src="../../../../../assets/mockups/dogfood.png">
+            <img class="product-image mr-3" [src]="'../../../../../assets/images/'+item.photo">
             <div class="d-flex flex-column">
-                <span>Dog food 25kg</span>
-                <span>ID</span>
-                <span>2131421412424</span>
-                <span>Kate</span>
+                <span class="text--size-16 text--typography-title">{{item.name}}</span>
+                <span class="text--size-10 text--typography-gray">ID</span>
+                <span class="text--size-14 text--typography-title">2131421412424</span>
+                <div class="d-flex align-items-center mt-1">
+                    <img class="mr-1" src="/assets/images/profile_woman.png" alt="Profile photo">
+                    <span>Kate</span>
+                </div>
             </div>
-            <div class="ml-auto">
+            <div class="ml-auto text--size-18 text--bold text--typography-title">
                 15$
             </div>
         </div>
         <div class="divider mt-3 mb-3"></div>
         <div class="col-12">
             <span class="text--typography-title text--size-16 text--weight-500">Your contact info</span>
-            <div class="card mt-2"></div>
+            <div class="card d-flex align-items-start p-3 mt-2 position--relative">
+                <img class="edit cursor--pointer" src="assets/icons/edit.svg">
+                <div class="d-flex flex-column mr-4">
+                    <span class="text--size-10 text--primary text--bold">ADRESS</span>
+                    <span class="text--size-12">David Hawkins</span>
+                    <span class="text--size-12">Wojska Polskiego 22</span>
+                    <span class="text--size-12">00-000 Warsaw</span>
+                </div>
+                <div class="d-flex flex-column">
+                    <span class="text--size-10 text--primary text--bold">EMAIL & PHONE</span>
+                    <span class="text--size-12">123 456 789</span>
+                    <span class="text--size-12">d.hawkins33@gmail.com</span>
+                </div>
+            </div>
         </div>
         <div class="col-12 mt-5">
             <span class="text--typography-title text--size-16 text--weight-500">Choose delivery</span>
-            <div class="card mt-2"></div>
+            <div class="card card--active d-flex justify-content-between mt-2">
+                <span class="d-flex align-items-center">
+                    <img class="mr-4" src="assets/icons/box.svg">
+                    <span class="text--size-14 text--typography-title">Self pickup</span>
+                </span>
+                <span>0.00$</span>
+            </div>
         </div>
         <div class="divider mt-4 mb-3"></div>
         <div class="col-12">
             <span class="text--typography-title text--size-16 text--weight-500">Choose payment method</span>
-            <div class="card mt-4 row">
+            <div class="card cursor--pointer mt-4 row">
                 <div class="col-3 d-flex justify-content-end">
                     <img class="mr-3" src="../../../../../assets/images/google.png">
                 </div>
                 <span>Google Pay</span>
             </div>
-            <div class="card mt-2 row">
+            <div class="card cursor--pointer card--active mt-2 row">
                 <div class="col-3 d-flex justify-content-end">
                     <img src="../../../../../assets/images/paypal.png">
                 </div>
                 <span>Paypal</span>
             </div>
-            <div class="card mt-2 row">
+            <div class="card cursor--pointer mt-2 row">
                 <div class="col-3 d-flex justify-content-end">
                     <img src="../../../../../assets/images/debet.png">
                 </div>
                 <span>Debet card</span>
             </div>
-            <div class="card mt-2 row">
+            <div class="card cursor--pointer mt-2 row">
                 <div class="col-3 d-flex justify-content-end">
                     <img class="mr-2" src="../../../../../assets/images/cash.png">
                 </div>
@@ -52,6 +74,25 @@
         <div class="divider mt-4 mb-3"></div>
         <div class="col-12 d-flex flex-column">
             <span class="text--typography-title text--size-16 text--weight-500">Summary</span>
+            <div class="d-flex mt-3">
+                <img class="summary-image mr-4" [src]="'../../../../../assets/images/'+item.photo">
+                <div>
+                    <span class="text--size-16 text--typography-title text--bold">{{item.name}}</span>
+                    <div class="d-flex">
+                        <div class="d-flex flex-column mr-4 text--size-10">
+                            <span>David Hawkins</span>
+                            <span>Wojska Polskiego 22</span>
+                            <span>00-000 Warsaw</span>
+                        </div>
+                        <div class="d-flex flex-column text--size-10">
+                            <span>123 456 789</span>
+                            <span>d.hawkins33@gmail.com</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <button class="btn-invisible btn-primary mt-5">Order</button>
         </div>
     </div>

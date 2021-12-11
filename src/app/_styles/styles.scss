@@ -39,6 +39,10 @@ body {
     font-size: 16px;
   }
 
+  &--size-18 {
+    font-size: 18px;
+  }
+
   &--size-24 {
     font-size: 24px;
   }
@@ -57,6 +61,14 @@ body {
 
   &--primary {
     color: var(--primary);
+  }
+
+  &--bold {
+    font-weight: 500;
+  }
+
+  &--bolder {
+    font-weight: 600;
   }
 }
 
@@ -121,4 +133,20 @@ a {
   display: flex;
   align-items: center;
   min-height: 58px;
+
+  &--active {
+      border: 2px solid var(--primary);
+  }
+}
+
+.position {
+  &--relative {
+    position: relative;
+  }
+}
+
+.cursor {
+  &--pointer {
+    cursor: pointer;
+  }
 }

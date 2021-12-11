@@ -2,7 +2,7 @@
   cursor: pointer;
 
   &__photo-container {
-    width: 175px;
+    max-width: 175px;
     height: 175px;
     border-radius: 4px;
     overflow: hidden;

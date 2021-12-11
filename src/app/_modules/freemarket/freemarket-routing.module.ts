@@ -19,7 +19,7 @@ const routes: Routes = [
         children: []
     },
     {
-        path: 'checkout',
+        path: 'checkout/:slug',
         component: ListingCheckoutComponent,
         canActivate: [],
         children: []
