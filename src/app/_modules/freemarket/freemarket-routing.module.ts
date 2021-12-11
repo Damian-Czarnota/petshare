@@ -4,19 +4,19 @@ import { FreemarketComponent } from './container/freemarket.component';
 
 
 const routes: Routes = [
-    {
-        path: '',
-        component: FreemarketComponent,
-        canActivate: [],
-        children: []
-    },
+  {
+    path: '',
+    component: FreemarketComponent,
+    canActivate: [],
+    children: []
+  },
 ];
 
 
 @NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule],
-    providers: []
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+  providers: []
 })
 export class FreemarketRoutingModule {
 }

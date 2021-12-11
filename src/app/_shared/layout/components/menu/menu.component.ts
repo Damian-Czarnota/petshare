@@ -31,8 +31,6 @@ export class MenuComponent implements OnInit {
         .subscribe((event: NavigationEnd) => {
           this.activeStepIndex = this.steps.findIndex(step =>
               event.urlAfterRedirects.match(step.pathRegexp));
-
-          console.log(this.activeStepIndex);
         });
   }
 

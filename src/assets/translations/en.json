@@ -2,5 +2,17 @@
   "SECONDARY-NAVIGATION": {
     "FREEMARKET": "Freemarket",
     "SUPPORT": "Support"
+  },
+  "SUPPORT": {
+    "INFO-BOX": {
+      "TITLE": "Look around for animal shelters",
+      "DESCRIPTION": "Find animal shelters in your area and see if they need your help! Find nearest shelters :)"
+    }
+  },
+  "FREEMARKET": {
+    "INFO-BOX": {
+      "TITLE": "Prevent food waste",
+      "DESCRIPTION": "Collecting products with short expiry date prevent from food waste!"
+    }
   }
 }

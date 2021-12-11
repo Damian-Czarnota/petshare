@@ -1,0 +1,29 @@
+.info-box {
+  margin: 24px 0;
+  padding: 15px;
+  color: #fff;
+  border-radius: 9px;
+
+  &--freemarket {
+    background: url("../../../assets/icons/clock.svg") no-repeat center right,
+    linear-gradient(90deg, rgba(216, 17, 41, 0.77) 0%, rgba(255, 41, 12, 0.77) 100%);
+
+  }
+
+  &--support {
+    background: linear-gradient(90deg, rgba(188, 26, 152, 0.77) 0%, rgba(215, 20, 66, 0.77) 100%);
+  }
+
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

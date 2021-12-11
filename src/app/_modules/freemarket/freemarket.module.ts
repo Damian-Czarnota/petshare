@@ -5,19 +5,21 @@ import { FreemarketRoutingModule } from './freemarket-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { SecondaryNavigationModule } from '@app/_shared/secondary-navigation/secondary-navigation.module';
 import { LoadersModule } from '@app/_shared/loaders/loaders.module';
+import { InfoBoxModule } from '@app/_shared/info-box/info-box.module';
 
 
 @NgModule({
-    declarations: [
-        FreemarketComponent,
-    ],
-    imports: [
-        CommonModule,
-        TranslateModule,
-        FreemarketRoutingModule,
-        SecondaryNavigationModule,
-        LoadersModule
-    ]
+  declarations: [
+    FreemarketComponent,
+  ],
+  imports: [
+    CommonModule,
+    TranslateModule,
+    FreemarketRoutingModule,
+    SecondaryNavigationModule,
+    LoadersModule,
+    InfoBoxModule
+  ]
 })
 export class Freemarket {
 }
