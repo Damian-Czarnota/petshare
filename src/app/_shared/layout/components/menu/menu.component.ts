@@ -13,11 +13,12 @@ export class MenuComponent implements OnInit {
   activeStepIndex: number;
 
   steps = [
-    { className: 'cart', pathRegexp: new RegExp('^/$'), url: '/'},
-    { className: 'home', pathRegexp: new RegExp('^/support|(/\*)$'), url: '/support'},
-    { className: 'add', pathRegexp: null},
-    { className: 'magnifier', pathRegexp: null},
-    { className: 'user', pathRegexp: null}];
+    { className: 'cart', pathRegexps: [new RegExp('^/$'),
+        new RegExp('^\/single\/.*$'), new RegExp('^\/checkout\/.*$')], url: '/'},
+    { className: 'home', pathRegexps: [new RegExp('^/support$'), new RegExp('^\/support\/.*$')], url: '/support'},
+    { className: 'add', pathRegexps: null},
+    { className: 'magnifier', pathRegexps: null},
+    { className: 'user', pathRegexps: null}];
 
   private destroyed$: Subject<void> = new Subject<void>();
 
@@ -30,7 +31,7 @@ export class MenuComponent implements OnInit {
             filter(event => event instanceof NavigationEnd))
         .subscribe((event: NavigationEnd) => {
           this.activeStepIndex = this.steps.findIndex(step =>
-              event.urlAfterRedirects.match(step.pathRegexp));
+              step.pathRegexps.some(regexp => event.urlAfterRedirects.match(regexp)));
         });
   }
 
