@@ -1,7 +1,5 @@
 # Pluto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
-
 Pluto is a free app where you can share food and accesories with other pet owners! You can easily put on stuff you don't need anymore or find used accesories for your pets and reduce waste! 
 
 There's also support option, where you can help nearbiest animal shelters, organisations or private persons who are in need!
