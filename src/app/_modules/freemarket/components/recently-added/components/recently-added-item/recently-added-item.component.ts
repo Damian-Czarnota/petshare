@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ListingItem } from '@app/_core/models/listing-item';
 
 @Component({
@@ -6,12 +6,6 @@ import { ListingItem } from '@app/_core/models/listing-item';
   templateUrl: './recently-added-item.component.html',
   styleUrls: ['./recently-added-item.component.scss']
 })
-export class RecentlyAddedItemComponent implements OnInit {
+export class RecentlyAddedItemComponent {
   @Input() item: ListingItem;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
